@@ -1,4 +1,6 @@
+import Cart from "@/components/Cart";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
+import Navbar from "@/components/Navbar";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { ArrowDownToLine, CheckCircle, Leaf } from "lucide-react";
 import Link from "next/link";
@@ -46,7 +48,7 @@ export default function Home() {
         </div>
         {/* TODO: List products  */}
       </MaxWidthWrapper>
-      <section className="border-t border-gray-200 bg-gray-50">
+      <section className=" border-t border-gray-200 bg-gray-50">
         <MaxWidthWrapper className="py-20">
           <div className="grid grid-cols-1 gap-y-12 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-3 lg:gap-x-8 lg:gap-y-0">
             {perks.map((perk) => (
